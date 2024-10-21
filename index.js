@@ -115,4 +115,6 @@ function showEmoji(emoji) {
     }, 50); // Increase duration for better visibility
 }
 
+
+
 });
