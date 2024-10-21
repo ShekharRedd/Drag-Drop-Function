@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Table with Undo and Emojis</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+    <button type="button" id="Add-Row">Add Row</button>
+    <button type="button" id="Undo-Row" style="margin-right: auto;">Undo</button>
+
+    <div id="emoji-container"></div>
+
+    
+    <div id="outside-div">
+        <table id="outside-table">
+            <tr>
+                <td>
+                    <button class="button-class" id="row-100" draggable="true" type="button" style="background-color: aqua;">100</button>
+                </td>
+                <td>
+                    <button class="button-class" id="row-200" draggable="true" type="button" style="background-color: rgb(129, 13, 238);">200</button>
+                </td>
+                <td>
+                    <button class="button-class" id="row-300" draggable="true" type="button" style="background-color: rgb(25, 238, 17);">300</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <button class="button-class" id="row-400" draggable="true" type="button" style="background-color: rgb(18, 197, 12);">400</button>
+                </td>
+                <td>
+                    <button class="button-class" id="row-500" draggable="true" type="button" style="background-color: rgba(20, 182, 115, 0.062);">500</button>
+                </td>
+                <td>
+                    <button class="button-class" id="row-600" draggable="true" type="button">600</button>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <button class="button-class" id="row-700" draggable="true" type="button" style="background-color: rgb(240, 18, 18);">700</button>
+                </td>
+                <td>
+                    <button class="button-class" id="row-800" draggable="true" type="button" style="background-color: rgb(13, 185, 238);">800</button>
+                </td>
+                <td>
+                    <button class="button-class" id="row-900" draggable="true" type="button" style="background-color: rgb(187, 228, 8);">900</button>
+                </td>
+            </tr>
+            
+            
+        </table>
+    </div>
+
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>

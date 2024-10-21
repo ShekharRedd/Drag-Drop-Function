@@ -1,0 +1,92 @@
+#outside-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 120px auto;
+}
+
+td {
+    border: 1px solid #292727;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+}
+
+button {
+    border: 1px solid #292727;
+    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-left: 10px;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: fuchsia;
+    cursor: grab;
+}
+
+.button-class {
+    cursor: grab;
+}
+
+.dragging {
+    opacity: 0.5;
+}
+/* Other styles */
+#outside-table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 130px auto;
+    position: relative; /* Make table relative for absolute positioning */
+}
+
+td {
+    border: 1px solid #292727;
+    padding: 20px;
+    text-align: center;
+    width: 25%;
+    height: 50px;
+    border-radius: 10px;
+    position: relative; /* Relative for emoji positioning */
+    padding-bottom: 10px;
+}
+
+#Add-Row {
+    position: absolute;  /* Position relative to the container */
+    top: 30px;           /* Adjust this value to move the button closer to the table */
+    left: 45%;           /* Center horizontally */
+    transform: translateX(-150px);  /* Offset to align with the table */
+    background-color: aliceblue;
+    border-radius: 0%;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#Undo-Row {
+    position: absolute;  /* Position relative to the container */
+    top: 30px;           /* Adjust to be the same as Add-Row */
+    left: 60%;           /* Slightly to the right of Add-Row */
+    transform: translateX(-150px); /* Offset for proper alignment */
+    background-color: aliceblue;
+    margin-left: 170px;
+    border-radius: 0%;
+    padding-bottom: 10px;
+}
+
+
+
+
+/* Position emoji container on the left side */
+#emoji-container {
+    position: absolute;
+    top: 10%;
+    left: 10;
+    transform: translateY(-50%);
+    font-size: 90px;
+    display: none;
+    transition: all 0.5s ease;
+    margin-left: 900px;
+    
+}
+
