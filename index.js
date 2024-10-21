@@ -93,13 +93,27 @@ $(document).ready(function () {
         }
     });
 
-    // Function to show emoji for 2 seconds
-    function showEmoji(emoji) {
-        const emojiContainer = $("#emoji-container");
-        emojiContainer.text(emoji);
-        emojiContainer.show();  // Show the emoji container
-        setTimeout(function () {
-            emojiContainer.fadeOut(); // Hide the emoji after 2 seconds
-        }, 100);
-    }
+// Function to show emoji for 2 seconds
+function showEmoji(emoji) {
+    const emojiContainer = $("#emoji-container");
+    emojiContainer.text(emoji);
+
+    // Calculate current scroll position
+    const scrollTop = $(window).scrollTop();
+    const scrollLeft = $(window).scrollLeft();
+
+    // Position the emoji based on scroll position
+    emojiContainer.css({
+        top: scrollTop + 10 + 'px',  // Adjust '10' for vertical offset if needed
+        right: scrollLeft + 100 + 'px' // Adjust '100' for horizontal offset
+    });
+
+    emojiContainer.show(); // Show the emoji container
+
+    setTimeout(function () {
+        emojiContainer.fadeOut(); // Hide the emoji after 2 seconds
+    }, 2000); // Increase duration for better visibility
+}
+
+
 });
