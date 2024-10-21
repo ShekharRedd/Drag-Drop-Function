@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drag and Drop Table with Undo and Emojis</title>
+    <title>Drag and Drop Table</title>
     <link rel="stylesheet" href="index.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -13,56 +13,56 @@
 <body>
 
     <button type="button" id="Add-Row">Add Row</button>
-    <button type="button" id="Undo-Row" style="margin-right: auto;">Undo</button>
+    <button type="button" id="Undo-Row" style="margin-right: auto; background-color: burlywood; ">Undo</button>
 
+    <!-- Emoji div -->
     <div id="emoji-container"></div>
 
-    
-    <div id="outside-div">
+    <!-- outside-div -->
+
+    <div id="outside-div">  
         <table id="outside-table">
             <tr>
                 <td>
-                    <button class="button-class" id="row-100" draggable="true" type="button" style="background-color: aqua;">100</button>
+                    <button class="button-class" id="row-100" draggable="true" type="button" style="background-color: aqua; border: aqua;">100</button>
                 </td>
                 <td>
-                    <button class="button-class" id="row-200" draggable="true" type="button" style="background-color: rgb(129, 13, 238);">200</button>
+                    <button class="button-class" id="row-200" draggable="true" type="button" style="background-color: rgb(129, 13, 238); border: rgb(129, 13, 238);">200</button>
                 </td>
                 <td>
-                    <button class="button-class" id="row-300" draggable="true" type="button" style="background-color: rgb(25, 238, 17);">300</button>
+                    <button class="button-class" id="row-300" draggable="true" type="button" style="background-color: rgb(25, 238, 17); border: rgb(25, 238, 17)">300</button>
                 </td>
             </tr>
 
             <tr>
                 <td>
-                    <button class="button-class" id="row-400" draggable="true" type="button" style="background-color: rgb(18, 197, 12);">400</button>
+                    <button class="button-class" id="row-400" draggable="true" type="button" style="background-color: rgb(18, 197, 12); border: rgb(18, 197, 12);">400</button>
                 </td>
                 <td>
-                    <button class="button-class" id="row-500" draggable="true" type="button" style="background-color: rgba(20, 182, 115, 0.062);">500</button>
+                    <button class="button-class" id="row-500" draggable="true" type="button" style="background-color: rgba(20, 182, 115, 0.062); border: rgb(20, 182, 115, 0.062);">500</button>
                 </td>
                 <td>
-                    <button class="button-class" id="row-600" draggable="true" type="button">600</button>
+                    <button class="button-class" id="row-600" draggable="true" type="button" style="background-color: coral; border: coral;">600</button>
                 </td>
             </tr>
-
 
             <tr>
                 <td>
-                    <button class="button-class" id="row-700" draggable="true" type="button" style="background-color: rgb(240, 18, 18);">700</button>
+                    <button class="button-class" id="row-700" draggable="true" type="button" style="background-color: rgb(240, 18, 18);  border: rgb(240, 18, 18)">700</button>
                 </td>
                 <td>
-                    <button class="button-class" id="row-800" draggable="true" type="button" style="background-color: rgb(13, 185, 238);">800</button>
+                    <button class="button-class" id="row-800" draggable="true" type="button" style="background-color: rgb(13, 185, 238); border: rgb(13, 185, 238) ;">800</button>
                 </td>
                 <td>
-                    <button class="button-class" id="row-900" draggable="true" type="button" style="background-color: rgb(187, 228, 8);">900</button>
+                    <button class="button-class" id="row-900" draggable="true" type="button" style="background-color: rgb(187, 228, 8); border: rgb(187, 228, 8);">900</button>
                 </td>
             </tr>
-            
-            
+        
         </table>
     </div>
 
+    <!-- Script -->
     <script src="index.js"></script>
-
 
 </body>
 

@@ -4,6 +4,8 @@
     margin: 120px auto;
 }
 
+/* td */
+
 td {
     border: 1px solid #292727;
     padding: 20px;
@@ -12,6 +14,8 @@ td {
     height: 50px;
     border-radius: 10px;
 }
+
+/* Default button */
 
 button {
     border: 1px solid #292727;
@@ -33,13 +37,8 @@ button {
 .dragging {
     opacity: 0.5;
 }
-/* Other styles */
-#outside-table {
-    width: 50%;
-    border-collapse: collapse;
-    margin: 130px auto;
-    position: relative; /* Make table relative for absolute positioning */
-}
+
+/* Td */
 
 td {
     border: 1px solid #292727;
@@ -50,7 +49,10 @@ td {
     border-radius: 10px;
     position: relative; /* Relative for emoji positioning */
     padding-bottom: 10px;
+
 }
+
+/* Add Row */
 
 #Add-Row {
     position: absolute;  /* Position relative to the container */
@@ -63,6 +65,8 @@ td {
     padding-bottom: 10px;
 }
 
+/* Undo button */
+
 #Undo-Row {
     position: absolute;  /* Position relative to the container */
     top: 30px;           /* Adjust to be the same as Add-Row */
@@ -74,8 +78,7 @@ td {
     padding-bottom: 10px;
 }
 
-
-
+/* Emoji */
 
 #emoji-container {
     position: absolute; 

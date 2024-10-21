@@ -20,7 +20,7 @@ $(document).ready(function () {
 
         // Push the row action to the undo stack
         undoStack.push({ type: 'add', row: lastRow });
-        showEmoji("👍");  // Show emoji on add
+        showEmoji("👍");  // Show emoji on add 
     });
 
     // Undo-Row functionality
@@ -112,8 +112,7 @@ function showEmoji(emoji) {
 
     setTimeout(function () {
         emojiContainer.fadeOut(); // Hide the emoji after 2 seconds
-    }, 2000); // Increase duration for better visibility
+    }, 50); // Increase duration for better visibility
 }
-
 
 });
