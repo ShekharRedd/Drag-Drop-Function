@@ -77,16 +77,11 @@ td {
 
 
 
-/* Position emoji container on the left side */
 #emoji-container {
-    position: absolute;
-    top: 10%;
-    left: 10;
-    transform: translateY(-50%);
-    font-size: 89px;
+    position: absolute; 
+    font-size: 80px;
     display: none;
     transition: all 0.5s ease;
-    margin-left: 900px;
-    
+    /* Remove other fixed positioning styles to prevent conflicts */
 }
 
